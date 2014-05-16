@@ -1,0 +1,2 @@
+.\vendor\bin\doctrine-module.bat  orm:schema-tool:update --force
+.\vendor\bin\doctrine-module.bat  orm:schema-tool:update --dump-sql
