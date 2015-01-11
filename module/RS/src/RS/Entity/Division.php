@@ -25,7 +25,7 @@ class Division
     /**
      * @var string
      * 
-     * @ORM\Column(name="country", type="string", length=3, nullable=true)
+     * @ORM\Column(name="country", type="string", length=3, nullable=false)
     */
     private $country;
 

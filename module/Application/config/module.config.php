@@ -60,6 +60,16 @@ return array(
                     ),
                 ),
             ),
+            'batch' => array(
+                'type' => 'Zend\Mvc\Router\Http\Literal',
+                'options' => array(
+                    'route'    => '/batch/index',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Batch',
+                        'action'     => 'index',
+                    ),
+                ),
+            ),
             // The following is a route to simplify getting started creating
             // new controllers and actions without needing to create a new
             // module. Simply drop new controllers in, and you can access them
@@ -169,6 +179,10 @@ return array(
                         'action' => 'csv',
                     ),
                 ),
+            ),
+            array(
+                'label'=>'Batch',
+                'route'=>'batch',
             ),
         ),
     ),

@@ -26,7 +26,8 @@ function getCurrentSeasonMatchday()
 	$result = mysql_query($query);
 	$row = mysql_fetch_assoc($result);
 	$season = $row['season'];
-	$query = "SELECT max(matchday) as matchday FROM results WHERE season=$season";
+	//$query = "SELECT max(matchday) as matchday FROM results WHERE season=$season";
+	$query = "SELECT matchday FROM results WHERE season=$season GROUP BY matchday HAVING count(matchday)=18 ORDER BY matchday desc LIMIT 1";
 	$result = mysql_query($query);
 	$row = mysql_fetch_assoc($result);
 	$matchday = $row['matchday'];	

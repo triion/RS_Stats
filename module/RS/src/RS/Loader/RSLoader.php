@@ -17,20 +17,66 @@ class RSLoader
         set_time_limit(0);
     }
 
-    public function loadPlayers($teamid)
+    public function processTransfers($teamid)
     {
-        $scraper = new Scraper\TeamPlayersScraper($teamid);
-        $scrapedPlayers = $scraper->getScrapedInfo();
-        $team = $this->em->find('RS\Entity\Team', $teamid);
+        $info = array();
+        $scraper = new Scraper\TeamTransfersScraper($teamid);
+        $transfers = $scraper->getScrapedInfo();
+        $team = $this->getTeamById($teamid);
         if(is_null($team)){
             return null;
         }
+        $info[] = "Team found in DB: ".$team->getTeamName();
+        foreach($transfers as $transfer)
+        {
+            $info[] = "\tProcessing transfer: ".$transfer['playername'];
+            if($transfer['toTeamId']==$teamid)
+            {
+                $info[] = "\t\tIncoming transfer, skipping...";
+                continue; // skip player if player is incoming tranfser (will be processed with loadPlayers)
+            }
+            $player = $this->em->find('RS\Entity\Player', $transfer['playerId']);
+            if(is_null($player))
+            { // player doesn't exist in DB (Reserve of other player)
+                $info[] = "\t\tPlayer not found in DB...";
+                continue;
+            }
+            $toTeam = $this->getTeamById($transfer['toTeamId']);
+            if(!is_null($toTeam))
+            { //Transfer is to another team in DB, keep records, but change the team.
+                $info[] = "\t\tTransfer to KNOWN team ".$toTeam->getTeamName().", switching team...";
+                $player->setTeam($toTeam);
+                $toTeam->getPlayers()->add($player);
+                $this->em->flush();
+                continue;
+            }
+            // Player transfer to unknown team... removing...
+            $info[] = "\t\tTransfer to UNKNOWN team, removing from DB";
+            $this->em->remove($player);
+            $this->em->flush();
+        }
 
+        return $info;
+    }
+
+    public function loadPlayers($teamid)
+    {
+        $info = array();
+        $scraper = new Scraper\TeamPlayersScraper($teamid);
+        $scrapedPlayers = $scraper->getScrapedInfo();
+        $team = $this->getTeamById($teamid);
+        if(is_null($team)){
+            return null;
+        }
+        $info[] = "scrapedPlayers: ".var_export($scrapedPlayers, TRUE);
+        $info[] = "Team found in DB: ".$team->getTeamName();
         foreach($scrapedPlayers as $scrapedPlayer)
         {
+            $info[] = "\tParsing scrapedPlayer: ".$scrapedPlayer['name'];
             $player = $this->em->find('RS\Entity\Player', $scrapedPlayer['id']);
             if(is_null($player))
             {
+                $info[] = "\tPlayer not found in DB, creating new...";
                 $player = new Entity\Player();
                 $player->setPlayerId($scrapedPlayer['id']);
                 $player->setName($scrapedPlayer['name']);
@@ -44,59 +90,72 @@ class RSLoader
             $player->setLanguage($stats['language']);
             $player->setTalent($stats['talent']);
             
-            $playerStats = new Entity\PlayerStats();
-
-            $playerStats->setPlayer($player);
-            $playerStats->setDate();
-            $playerStats->setAge(implode("#", $stats['age']));
-            $playerStats->setPosition($stats['position']);
-            $playerStats->setFlank($stats['flank']);
-            $playerStats->setStars($stats['stars']);
-            $playerStats->setStarsMax($stats['stars_max']);
-            $playerStats->setSpecials(implode("#", $stats['specials']));
-            $playerStats->setFitness($stats['fitness']);
-            $playerStats->setSpeed($stats['speed']);
-            $playerStats->setPower($stats['power']);
-            $playerStats->setEndurance($stats['endurance']);
-            $playerStats->setBlocking($stats['blocking']);
-            $playerStats->setDueling($stats['dueling']);
-            $playerStats->setPassing($stats['passing']);
-            $playerStats->setScoring($stats['scoring']);
-            $playerStats->setTactics($stats['tactics']);
-            $playerStats->setGoalkeeping($stats['goalkeeping']);
-            $playerStats->setDefending($stats['defense']);
-            $playerStats->setMidfield($stats['midfield']);
-            $playerStats->setAttacking($stats['attack']);
-            $playerStats->setMatches($scrapedPlayer['stats']['matches']);
-            $playerStats->setGoals($scrapedPlayer['stats']['goals']);
-            $playerStats->setAssists($scrapedPlayer['stats']['assists']);
-            $playerStats->setCleansheets($scrapedPlayer['stats']['cleansheet']);
-            $playerStats->setYellowCards($scrapedPlayer['stats']['yellow']);
-            $playerStats->setRedCards($scrapedPlayer['stats']['red']);
-            $playerStats->setSuspended($scrapedPlayer['stats']['suspended']);
-            $playerStats->setNT($scrapedPlayer['isNT']);
-
-            $player->getStats()->add($playerStats);
-
-            $this->em->persist($player);
-            $this->em->flush();
+            $this->updatePlayer($player);
         }
+        return $info;
+    }
 
+    public function updatePlayer(Entity\Player &$player)
+    {
+        $playerScraper = new Scraper\PlayerScraper($player->getPlayerid());
+        $stats = $playerScraper->getScrapedInfo();
+        
+        $playerStats = new Entity\PlayerStats();
+
+        $playerStats->setPlayer($player);
+        $playerStats->setDate();
+        $playerStats->setAge(implode("#", $stats['age']));
+        $playerStats->setPosition($stats['position']);
+        $playerStats->setFlank($stats['flank']);
+        $playerStats->setStars($stats['stars']);
+        $playerStats->setStarsMax($stats['stars_max']);
+        $playerStats->setSpecials(implode("#", $stats['specials']));
+        $playerStats->setFitness($stats['fitness']);
+        $playerStats->setSpeed($stats['speed']);
+        $playerStats->setPower($stats['power']);
+        $playerStats->setEndurance($stats['endurance']);
+        $playerStats->setBlocking($stats['blocking']);
+        $playerStats->setDueling($stats['dueling']);
+        $playerStats->setPassing($stats['passing']);
+        $playerStats->setScoring($stats['scoring']);
+        $playerStats->setTactics($stats['tactics']);
+        $playerStats->setGoalkeeping($stats['goalkeeping']);
+        $playerStats->setDefending($stats['defense']);
+        $playerStats->setMidfield($stats['midfield']);
+        $playerStats->setAttacking($stats['attack']);
+        $playerStats->setMatches($scrapedPlayer['stats']['matches']);
+        $playerStats->setGoals($scrapedPlayer['stats']['goals']);
+        $playerStats->setAssists($scrapedPlayer['stats']['assists']);
+        $playerStats->setCleansheets($scrapedPlayer['stats']['cleansheet']);
+        $playerStats->setYellowCards($scrapedPlayer['stats']['yellow']);
+        $playerStats->setRedCards($scrapedPlayer['stats']['red']);
+        $playerStats->setSuspended($scrapedPlayer['stats']['suspended']);
+        $playerStats->setNT($scrapedPlayer['isNT']);
+
+        $player->getStats()->add($playerStats);
+
+        $this->em->persist($player);
+        $this->em->flush();
     }
 
     public function loadAllTeamDetails()
     {
+        $info = array();
         $teamRepo = $this->em->getRepository('RS\Entity\Team');
         $teams = $teamRepo->findAll();
-
+        $info[] = "Loaded all Teams from DB";
         foreach($teams as $team)
         {
-            $this->loadTeamDetails($team->getTeamid());
+            $info[] = "\tLoading TeamDetails for ".$team->getTeamName();
+            $info[] = $this->loadTeamDetails($team->getTeamid());
         }
+        return $info;
     }
 
-    public function loadTeamDetails($teamid)
+    public function loadTeamDetails($teamid, $firstCapture = false)
     {
+        $info[] = array();
+        $info[] = "Loading TeamDetails for ".$teamid;
         $teamdetail = new Entity\TeamDetail();
         $tds = new Scraper\TeamDetailsScraper($teamid);
         $details = $tds->getScrapedInfo();
@@ -114,16 +173,16 @@ class RSLoader
         $teamdetail->setStadium($facilities["stadium"]);
         $teamdetail->setFanshop($facilities["fanshop"]);
         $teamdetail->setCatering($facilities["catering"]);
-        $teamdetail->setDate();
 
         $new = false;
-        $team = $this->em->find('RS\Entity\Team', $teamid);
+        $team = $this->getTeamById($teamid);
 
         //var_dump($team);
         
         if(is_null($team))
         {
-            $team = new Team();
+            $info[] = "\tTeam not found in DB, creating new...";
+            $team = new Entity\Team();
             $team->setTeamid($teamid);
             $team->setTeamname($details['name']);
             $team->setCountry($details['country']);
@@ -140,10 +199,10 @@ class RSLoader
 
         $this->em->flush(); 
     }
-    
-    public function loadLeagueTeams($countryCode, $league = 9, $level = 1, $group = 1)
+
+    public function loadLeagueTeams(Entity\Division $division)
     {
-        $scraper = new Scraper\LeagueScraper($countryCode, $league, $level, $group);
+        $scraper = new Scraper\LeagueScraper($division);
         $scrapedTeams = $scraper->getScrapedInfo();
 
         $info = array();
@@ -163,15 +222,53 @@ class RSLoader
             $team->setTeamname($scrapedTeam['name']);
             $team->setCountry($scrapedTeam['country']);
             $team->setManager($scrapedTeam['manager']);
+
+            // Is division-team link new?
+            // TODO: check contains works
+            if(!$team->getDivisions()->contains($division))
+            {
+                $team->getDivisions()->add($division);
+                $division->getTeams()->add($team);
+            }
+            
+            $info[] = $msg;
             if($newTeam) {
-                //Import details, facilities and players
+                //persist new team
                 $this->em->persist($team); 
+
+                //Import details, facilities and players for new team
+                $info[] = "\tLoading TeamDetails for new team ".$team->getTeamName();
+                $info[] = $this->loadTeamDetails($team->getTeamid());
+                $info[] = $this->loadPlayers($team->getTeamid());
             } 
 
-            $this->em->flush();
-            $info[] = $msg;
+            $this->em->flush();            
         }
         return $info;
+    }
+    
+    public function createNewDivision($country, $season, $level, $group)
+    {
+        $query = $this->em->createQuery('SELECT d FROM RS\Entity\Division d WHERE d.country=:country 
+                    AND d.season=:season AND d.level=:level AND d.group=:group');
+        $query->setParameter('country', $country);
+        $query->setParameter('season', $season);
+        $query->setParameter('level', $level);
+        $query->setParameter('group', $group);
+        $division = $query->getOneOrNullResult();
+
+        if(is_null($division))
+        {
+            $division = new Entity\Division();
+            $division->setCountry($country);
+            $division->setSeason($season);
+            $division->setLevel($level);
+            $division->setGroup($group);
+
+            $this->em->persist($division);
+        }
+
+        return $division;
     }
 
     private function getTeamById($teamid)

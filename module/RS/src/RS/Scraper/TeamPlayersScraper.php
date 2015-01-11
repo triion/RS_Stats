@@ -44,10 +44,10 @@ class TeamPlayersScraper extends Scraper
                 $player['age'] = $tr->find('td', 2)->plaintext;
                 $player['position'] = strstr($tr->find('td', 3)->plaintext, "(", TRUE);
                 $player['flank'] = trim($tr->find('td', 3)->find('span', 0)->plaintext);
-                $player['stars'] = $tr->find('td', 4)->find('span', 0)->title;
+                /*$player['stars'] = $tr->find('td', 4)->find('span', 0)->title;
                 if(TeamPlayersScraper::startsWith($player['stars'], "Youth player:")) {
                     $player['stars'] = substr($player['stars'], -10);
-                }
+                }*/
                 $player['stats']['matches'] = $tr->find('td', 5)->plaintext;
                 $player['stats']['goals'] = $tr->find('td', 6)->plaintext;
                 $player['stats']['assists'] = $tr->find('td', 7)->plaintext;

@@ -3,17 +3,11 @@ namespace RS\Scraper;
 
 class LeagueScraper extends Scraper
 {
-    private $countryCode;
-    private $season;
-    private $level;
-    private $group;
+    private $division;
 
-    public function __construct($countryCode, $season = 9, $level = 1, $group = 1)
+    public function __construct($division)
     {
-        $this->countryCode = $countryCode;
-        $this->season = $season;
-        $this->level = $level;
-        $this->group = $group;
+        $this->division = $division;
         parent::__construct();        
     }
 
@@ -21,7 +15,7 @@ class LeagueScraper extends Scraper
     {
         //$URL = "http://rs.local:8080/testdata/league.txt";
         $URL = 'http://rockingsoccer.com/en/soccer/league-%1$s.%2$d/level-%3$d/group-%4$d/clubs';
-        return sprintf($URL, $this->getCountryCode(), $this->getSeason(), $this->getLevel(), $this->getGroup());
+        return sprintf($URL, $this->division->getCountry(), $this->division->getSeason(), $this->division->getLevel(), $this->division->getGroup());
     }
 
     protected function scrapeHTML()
@@ -49,100 +43,6 @@ class LeagueScraper extends Scraper
         return $teams;
     }
 
-    /**
-     * Gets the value of countryCode.
-     *
-     * @return mixed
-     */
-    public function getCountryCode()
-    {
-        return $this->countryCode;
-    }
     
-    /**
-     * Sets the value of countryCode.
-     *
-     * @param mixed $countryCode the country code
-     *
-     * @return self
-     */
-    public function setCountryCode($countryCode)
-    {
-        $this->countryCode = $countryCode;
-
-        return $this;
-    }
-
-    /**
-     * Gets the value of season.
-     *
-     * @return mixed
-     */
-    public function getSeason()
-    {
-        return $this->season;
-    }
-    
-    /**
-     * Sets the value of season.
-     *
-     * @param mixed $season the season
-     *
-     * @return self
-     */
-    public function setSeason($season)
-    {
-        $this->season = $season;
-
-        return $this;
-    }
-
-    /**
-     * Gets the value of level.
-     *
-     * @return mixed
-     */
-    public function getLevel()
-    {
-        return $this->level;
-    }
-    
-    /**
-     * Sets the value of level.
-     *
-     * @param mixed $level the level
-     *
-     * @return self
-     */
-    public function setLevel($level)
-    {
-        $this->level = $level;
-
-        return $this;
-    }
-
-    /**
-     * Gets the value of group.
-     *
-     * @return mixed
-     */
-    public function getGroup()
-    {
-        return $this->group;
-    }
-    
-    /**
-     * Sets the value of group.
-     *
-     * @param mixed $group the group
-     *
-     * @return self
-     */
-    public function setGroup($group)
-    {
-        $this->group = $group;
-
-        return $this;
-    }
 }
 

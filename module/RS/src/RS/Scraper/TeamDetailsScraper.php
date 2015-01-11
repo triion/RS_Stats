@@ -31,6 +31,10 @@ class TeamDetailsScraper extends Scraper
                 {
                     $value = str_replace(',','',$value); //Filter comma from popularity
                 }
+                if($key=='country')
+                {
+                    $value = trim($tr->find('td', 0)->find('img', 0)->alt);
+                }
                 $details[$key] = $value;
             }
         }

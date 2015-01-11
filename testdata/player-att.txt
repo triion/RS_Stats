@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en" class="live ltr" xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="google-site-verification" content="71ok6pUaMAJIZU9-1ALA0NvnQFJEqkw8KG9YC9bG6NE" />
+<meta name="description" content="Luc Nilis is a forward from Belgium on Rocking Soccer: The intelligent free online football manager game">
+<title>Luc Nilis - Rocking Soccer</title>
+
+<link rel="canonical" href="http://rockingsoccer.com/en/soccer/info/player-275994" />
+
+<link rel="stylesheet" type="text/css" href="/css/rockingsoccer.css?v=22" />
+<link rel="stylesheet" type="text/css" href="/css/match.css?v=7" />
+<!--[if IE]>
+	<link rel="stylesheet" type="text/css" href="/css/rr_ie.css?v=1" />
+<![endif]-->
+<script type="text/javascript" src="/js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="/js/onload.js?v=7"></script>
+<meta property="og:title" content="Rocking Soccer - Luc Nilis" />
+<meta property="og:image" content="http://shared.rockingrackets.com/faces/4L3E612C3--0B 0-U30AC3.png" />
+<meta property="og:url" content="http://rockingsoccer.com/en/soccer/info/player-275994" />
+<meta property="og:type" content="game" />
+<meta property="og:description" content="Luc Nilis is a forward from Belgium on Rocking Soccer: The intelligent free online football manager game" />
+<meta property="fb:app_id" content="290770044377303" />
+
+<link href="/img/favicon2.ico" rel="icon" type="image/x-icon" />
+<link rel="alternate" type="application/rss+xml" title="Rocking Soccer forum posts" href="/en/soccer/forum/home/rss" />
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png?v=2" />
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', 'UA-5065705-7']);
+  _gaq.push(['_setDomainName', 'rockingsoccer.com']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<!-- google ads code -->
+<script type='text/javascript'>
+	var googletag = googletag || {};
+	googletag.cmd = googletag.cmd || [];
+	(function() {
+	var gads = document.createElement('script');
+	gads.async = true;
+	gads.type = 'text/javascript';
+	var useSSL = 'https:' == document.location.protocol;
+	gads.src = (useSSL ? 'https:' : 'http:') + 
+	'//www.googletagservices.com/tag/js/gpt.js';
+	var node = document.getElementsByTagName('script')[0];
+	node.parentNode.insertBefore(gads, node);
+	})();
+	</script>
+	
+	<script type='text/javascript'>
+	googletag.cmd.push(function() {
+	googletag.defineSlot('/1012405/Rocking-Soccer-Large-Skyscraper', [300, 600], 'div-gpt-ad-1361727844931-1').addService(googletag.pubads());
+	googletag.defineSlot('/1012405/Rocking-Soccer-Wide-Skyscraper', [160, 600], 'div-gpt-ad-1361727844931-4').addService(googletag.pubads());
+	googletag.defineSlot('/1012405/Rocking-Soccer-Large-Rectangle', [336, 280], 'div-gpt-ad-1362689297449-0').addService(googletag.pubads());
+	googletag.defineSlot('/1012405/Rocking-Soccer-Medium-Rectangle', [300, 250], 'div-gpt-ad-1361727844931-3').addService(googletag.pubads());
+	googletag.defineSlot('/1012405/Rocking-Soccer-Leaderboard', [728, 90], 'div-gpt-ad-1361727844931-2').addService(googletag.pubads());
+	googletag.defineSlot('/1012405/Rocking-Soccer-Leaderboard2', [728, 90], 'div-gpt-ad-1362689297449-1').addService(googletag.pubads());
+	googletag.pubads().enableSingleRequest();
+	googletag.enableServices();
+	});
+</script>
+<!-- facebook like button -->
+<script type='text/javascript'>
+(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=290770044377303"; // appId must be valid
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+</head>
+
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=290770044377303";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Project Wonderful Ad Box Loader -->
+<!-- Put this after the <body> tag at the top of your page -->
+<script type="text/javascript">
+   (function(){function pw_load(){
+      if(arguments.callee.z)return;else arguments.callee.z=true;
+      var d=document;var s=d.createElement('script');
+      var x=d.getElementsByTagName('script')[0];
+      s.type='text/javascript';s.async=true;
+      s.src='//www.projectwonderful.com/pwa.js';
+      x.parentNode.insertBefore(s,x);}
+   if (window.attachEvent){
+    window.attachEvent('DOMContentLoaded',pw_load);
+    window.attachEvent('onload',pw_load);}
+   else{
+    window.addEventListener('DOMContentLoaded',pw_load,false);
+    window.addEventListener('load',pw_load,false);}})();
+</script>
+<!-- End Project Wonderful Ad Box Loader -->
+
+<div id="header" >
+
+<div id="topbar" title="Luc Nilis - Rocking Soccer">
+<div id="social-buttons"><div class="twitter" ><a href="https://twitter.com/RockingSoccer" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @RockingSoccer</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div><div class="fb-like" data-href="https://www.facebook.com/RockingSoccerManager" data-send="false" data-layout="button_count" data-width="80" data-show-faces="false"></div></div>
+		<a href="http://rockingsoccer.com/en/soccer" class="logo">
+		<img src="/img/rslogo.png" alt="Rocking Soccer - Football Manager" />
+		</a>		
+			
+		
+		<div class="clearfix"></div>
+		<!-- templates/login.html --><div class="login-form">
+<div class="userinfo-elem facebook-login"><a class="button facebook" href="https://www.facebook.com/dialog/oauth?client_id=290770044377303&amp;redirect_uri=http%3A%2F%2Frockingsoccer.com%2Fen%2Fsoccer&amp;state=2455e46f9eaff15b7902c48e27fb5462&amp;scope=user_birthday,email,publish_stream,user_hometown,user_about_me,friends_about_me">
+Facebook login
+</a></div>
+
+
+<div class="userinfo-elem register"><a href="http://rockingsoccer.com/en/soccer/register" >Get an account</a></div>
+<div class="userinfo-elem lost-password"><a href="http://rockingsoccer.com/en/soccer/confirm/password" >Lost pass?</a></div>
+<form method="post" action="http://rockingsoccer.com/en/soccer/info/player-275994">
+
+<input type="text" name="username" value="Username" class="text size10 clear-label" size="10">
+<input type="password" name="password" value="password" class="password size10 clear-label" size="10">
+<button type="submit" name="login">Log In</button>
+</form>
+</div>
+<!-- //templates/login.html -->
+		
+		
+		<div id="gametime">
+		
+		</div>
+		<div id="flag">
+		
+		</div>
+		<div id="language"><select name="language" onchange="select_onchange_goto_url('language-select');" id="language-select" ><option value="http://rockingsoccer.com/en/soccer/info/player-275994?setlanguage=en"   selected >English</option>
+<option value="http://rockingsoccer.com/en/soccer/info/player-275994?setlanguage=cs"  >Ceština</option>
+<option value="http://rockingsoccer.com/en/soccer/info/player-275994?setlanguage=bs"  >Bosanski</option>
+<option value="http://rockingsoccer.com/en/soccer/info/player-275994?setlanguage=zh"  >????</option>
+<option value="http://rockingsoccer.com/en/soccer/info/player-275994?setlanguage=zh-tw"  >????</option>
+<option value="http://rockingsoccer.com/en/soccer/info/player-275994?setlanguage=de"  >Deutsch</option>
+<option value="http://rockingsoccer.com/en/soccer/info/player-275994?setlanguage=es"  >Español</option>
+<option value="http://rockingsoccer.com/en/soccer/info/player-275994?setlanguage=fr"  >Français</option>
+<option value="http://rockingsoccer.com/en/soccer/info/player-275994?setlanguage=hr"  >Hrvatski</option>
+<option value="http://rockingsoccer.com/en/soccer/info/player-275994?setlanguage=it"  >Italiano</option>
+<option value="http://rockingsoccer.com/en/soccer/info/player-275994?setlanguage=el"  >????????</option>
+<option value="http://rockingsoccer.com/en/soccer/info/player-275994?setlanguage=lv"  >Latviešu</option>
+<option value="http://rockingsoccer.com/en/soccer/info/player-275994?setlanguage=hu"  >Magyar</option>
+<option value="http://rockingsoccer.com/en/soccer/info/player-275994?setlanguage=nl"  >Nederlands</option>
+<option value="http://rockingsoccer.com/en/soccer/info/player-275994?setlanguage=no"  >Norsk</option>
+<option value="http://rockingsoccer.com/en/soccer/info/player-275994?setlanguage=pl"  >Polski</option>
+<option value="http://rockingsoccer.com/en/soccer/info/player-275994?setlanguage=pt"  >Português</option>
+<option value="http://rockingsoccer.com/en/soccer/info/player-275994?setlanguage=ro"  >Româna</option>
+<option value="http://rockingsoccer.com/en/soccer/info/player-275994?setlanguage=sl"  >Slovenšcina</option>
+<option value="http://rockingsoccer.com/en/soccer/info/player-275994?setlanguage=fi"  >Suomi</option>
+<option value="http://rockingsoccer.com/en/soccer/info/player-275994?setlanguage=tr"  >Türkçe</option>
+<option value="http://rockingsoccer.com/en/soccer/info/player-275994?setlanguage=vi"  >Ti?ng Vi?t</option>
+<option value="http://rockingsoccer.com/en/soccer/info/player-275994?setlanguage=ru"  >???????</option>
+<option value="http://rockingsoccer.com/en/soccer/info/player-275994?setlanguage=bg"  >?????????</option>
+<option value="http://rockingsoccer.com/en/soccer/info/player-275994?setlanguage=he"  >?????</option>
+</select> <a href="http://rockingsoccer.com/en/soccer/info/player-275994?setlanguage=en" title="English" ><img src="/img/flags/gb.png" alt="gb"  /></a> <a href="http://rockingsoccer.com/en/soccer/info/player-275994?setlanguage=zh" title="????" ><img src="/img/flags/cn.png" alt="cn"  /></a> <a href="http://rockingsoccer.com/en/soccer/info/player-275994?setlanguage=es" title="Español" ><img src="/img/flags/es.png" alt="es"  /></a> <a href="http://rockingsoccer.com/en/soccer/info/player-275994?setlanguage=fr" title="Français" ><img src="/img/flags/fr.png" alt="fr"  /></a> <a href="http://rockingsoccer.com/en/soccer/info/player-275994?setlanguage=ru" title="???????" ><img src="/img/flags/ru.png" alt="ru"  /></a></div>
+		</div>
+	
+</div>
+
+
+<div id="body">
+<!-- #NEXTMATCH# -->
+
+
+<div id="content-wrapper">
+
+
+<div id="menu">
+<h2 >User</h2><ul ><li ><a href="http://rockingsoccer.com/en/soccer/register" ><div class="icon" ><img src="/img/icons/register.png" alt="" class="icon"  /></div>Get an account</a></li></ul><h2 >World</h2><ul ><li ><a href="http://rockingsoccer.com/en/soccer/news" ><div class="icon" >&nbsp;</div>News</a></li><li ><a href="http://rockingsoccer.com/en/soccer/forum" ><div class="icon" >&nbsp;</div>Forum</a></li><li ><a href="http://rockingsoccer.com/en/soccer/countries" ><div class="icon" >&nbsp;</div>Countries</a></li></ul><h2 >Support</h2><ul ><li ><a href="http://rockingsoccer.com/en/soccer/help" ><div class="icon" >&nbsp;</div>Help</a></li><li ><a href="http://rockingsoccer.com/en/soccer/staff" ><div class="icon" >&nbsp;</div>Contact/Staff</a></li><li ><a href="http://rockingsoccer.com/en/soccer/tos" ><div class="icon" >&nbsp;</div>Terms of service</a></li><li ><a href="http://rockingsoccer.com/en/soccer/testimonials" ><div class="icon" >&nbsp;</div>Testimonials</a></li></ul>
+<!-- templates/ads/toplists_en.html --><div id="partners-menu">
+<h3>Partners:</h3>
+<a href="http://www.yourturnmyturn.com/" target="_blank" title="play boardgames online for free">Play boardgames</a>
+<a href="http://www.onlinesportmanagers.com/" target="_blank">Online Sport Managers</a>
+</div><!-- //templates/ads/toplists_en.html -->
+<!-- templates/ads/pw_button.html --><h3 class="pwadh">Advertisement:</h3>
+<!-- Project Wonderful Ad Box Code -->
+<div style="text-align:center;"><div style="display:inline-block;" id="pw_adbox_68084_2_0"></div></div>
+<script type="text/javascript"></script>
+<noscript><div style="text-align:center;"><div style="display:inline-block;"><map name="admap68084" id="admap68084"><area href="http://www.projectwonderful.com/out_nojs.php?r=0&c=0&id=68084&type=2" shape="rect" coords="0,0,117,30" title="" alt="" target="_blank" /><area href="http://www.projectwonderful.com/out_nojs.php?r=1&c=0&id=68084&type=2" shape="rect" coords="0,30,117,60" title="" alt="" target="_blank" /><area href="http://www.projectwonderful.com/out_nojs.php?r=2&c=0&id=68084&type=2" shape="rect" coords="0,60,117,90" title="" alt="" target="_blank" /></map>
+<table cellpadding="0" cellspacing="0" style="width:117px;border-style:none;background-color:;"><tr><td><img src="http://www.projectwonderful.com/nojs.php?id=68084&type=2" style="width:117px;height:90px;border-style:none;" usemap="#admap68084" alt="" /></td></tr><tr><td colspan="1"><center><a style="font-size:10px;color:#444444;text-decoration:none;line-height:1.2;font-weight:bold;font-family:Tahoma, verdana,arial,helvetica,sans-serif;text-transform: none;letter-spacing:normal;text-shadow:none;white-space:normal;word-spacing:normal;" href="http://www.projectwonderful.com/advertisehere.php?id=68084&type=2&tag=17948" target="_blank">Your ad here, right now: $0.02</a></center></td></tr></table></div></div>
+</noscript>
+<!-- End Project Wonderful Ad Box Code --><!-- //templates/ads/pw_button.html -->
+
+<!-- #LANGUAGELINKS# -->
+</div>
+
+<div id="content">
+
+<!-- templates/two_cols_wide.html --><div class="two_cols_wide">
+<div class="center">
+<!-- #MAINTITLE# -->
+<h2 >Luc Nilis</h2><p >Luc Nilis is a forward from Belgium on Rocking Soccer: The intelligent free online football manager game</p><table class="vertical_table vt_col1" >
+<tr class="odd" ><th >Nationality</th><td >Belgium <a href="http://rockingsoccer.com/en/soccer/info/country-be" ><img src="/img/flags/be.png" alt="be" title="Belgium"  /></a></td></tr>
+<tr class="even" ><th >Language</th><td >Dutch</td></tr>
+<tr class="odd" ><th >Age</th><td >23year, 20weeks (96%)</td></tr>
+<tr class="even" ><th >Position</th><td >Forward</td></tr>
+<tr class="odd" ><th >Value</th><td ><span title="5.7" class="star-silver-skill" style="width : 66px" ><span class="star-skill" style="width : 14px" ></span></span></td></tr>
+<tr class="even" ><th >Special attributes</th><td ><span title="Player gets a defensive bonus when another player tries to steal the ball from him." >Shielding</span></td></tr>
+<tr class="odd" ><th >Fitness</th><td ><div style="width:40px" class="energy" title="Fatigue penalty: 0.05 ball. This player will be fully recovered at Tomorrow  - 04:38." ><div style="width:32px;" ></div></div></td></tr>
+<tr class="even" ><th >Club</th><td ><a href="http://rockingsoccer.com/en/soccer/info/country-be" ><img src="/img/flags/be.png" alt="be" title="Belgium"  /></a> <a href="http://rockingsoccer.com/en/soccer/info/team-911" ><span >RSC BlackOut</span></a></td></tr>
+<tr class="odd" ><th >National team</th><td ><a href="http://rockingsoccer.com/en/soccer/info/country-be" ><img src="/img/flags/be.png" alt="be" title="Belgium"  /></a> <a href="http://rockingsoccer.com/en/soccer/info/team-505" ><span >Belgium</span></a></td></tr>
+</table>
+<table class="vertical_table vt_col3" >
+<thead >
+<tr ><th colspan="6" >Features</th></tr>
+<tr ><td colspan="2" >Fixed features</td><td colspan="2" >Trainable features</td><td colspan="2" >Experience</td></tr>
+</thead>
+<tr class="odd" ><th >Talent</th><td ><span title="3.6" class="balls-skill" style="width : 43px" ></span></td><th >Scoring</th><td ><span title="4" class="balls-skill" style="width : 48px" ></span></td><th >Attack</th><td ><span title="944" class="attack-skill" style="width : 57px" ></span></td></tr>
+<tr class="even" ><th >Endurance</th><td ><span title="2.42" class="balls-skill" style="width : 29px" ></span></td><th >Passing</th><td ><span title="1.35" class="balls-skill" style="width : 16px" ></span></td><th >Midfield</th><td ><span title="2" class="midfield-skill" style="width : 0px" ></span></td></tr>
+<tr class="odd" ><th >Power</th><td ><span title="4.2" class="balls-skill" style="width : 50px" ></span></td><th >Dueling</th><td ><span title="2.32" class="balls-skill" style="width : 28px" ></span></td><th >Defense</th><td ><span class="defense-skill" style="width : 0px" ></span></td></tr>
+<tr class="even" ><th >Speed</th><td ><span title="3.76" class="balls-skill" style="width : 45px" ></span></td><th >Blocking</th><td ><span title="0.2" class="balls-skill" style="width : 2px" ></span></td><th >Goalkeeping</th><td ><span class="goalkeeping-skill" style="width : 0px" ></span></td></tr>
+<tr class="odd" ><th > </th><td ></td><th >Tactics</th><td ><span title="3.55" class="balls-skill" style="width : 43px" ></span></td><th >Flank</th><td ><span title="Left/Center/Right" >L/C/R</span></td></tr>
+</table>
+<h3 >Compare players</h3><p >As a V.I.P. user you will be able to compare players (<span class="vip-level" style="width : 14px" title="V.I.P.-level 1" ></span>) and teams (<span class="vip-level" style="width : 28px" title="V.I.P.-level 2" ></span>) to get a quick overview of their differences.</p><form method="get" action="http://rockingsoccer.com/en/soccer/info/compareplayers"  ><p >Compare with: <select name="id1" ><option value="545140"  >Enzo Scifo</option>
+<option value="454395"  >Vince Kompany</option>
+<option value="353810"  >Cheikh Kouyate</option>
+<option value="256389"  >Klaudije Komljenovic</option>
+<option value="190290"  >Thibaut Verguts</option>
+<option value="20122"  >Karim Rooms</option>
+</select><input type="hidden" value="275994" class="hidden"  name="id2"  />
+<input type="submit" value="Compare players" class="submit disabled"  disabled="disabled" />
+</p></form><!-- templates/ads/dashboard_block.html --><div class="dashboard_element">
+<h3>Advertisement</h3>
+	<!-- Rocking-Soccer-Large-Rectangle -->
+	<div id='div-gpt-ad-1362689297449-0' style='width:336px; height:280px;' class='adblock'>
+	<script type='text/javascript'>
+	googletag.cmd.push(function() { googletag.display('div-gpt-ad-1362689297449-0'); });
+	</script>
+	</div>
+</div><!-- //templates/ads/dashboard_block.html -->
+
+</div>
+<div class="side">
+<img src="http://shared.rockingrackets.com/faces/4L3E612C3--0B 0-U30AC3.png" alt="Luc Nilis" title="Luc Nilis" class="player_image"  /><div class="menu" ><h3 >Pagemenu</h3><ul class="menu menu_3" ><li ><a href="http://rockingsoccer.com/en/soccer/info/player-275994" class="current" >Overview</a></li><li ><a href="http://rockingsoccer.com/en/soccer/info/player-275994/matches" >Matches</a></li><li ><a href="http://rockingsoccer.com/en/soccer/info/player-275994/employment" >Employment</a></li><li ></li></ul></div>
+</div>
+<div class="clearfix"> </div>
+</div><!-- //templates/two_cols_wide.html -->
+
+</div>
+<div class="clearfix"></div>
+</div>
+<div id="skyscraper">
+	<!-- templates/ads/side_small.html --><!-- Rocking-Soccer-Wide-Skyscraper -->
+<div id='div-gpt-ad-1361727844931-4' style='width:160px; height:600px;'>
+<script type='text/javascript'>
+googletag.cmd.push(function() { googletag.display('div-gpt-ad-1361727844931-4'); });
+</script>
+</div><!-- //templates/ads/side_small.html -->
+
+</div>
+<div class="copyright">
+&copy; 2013 <a href="http://delftgames.com">Delft Games</a>
+</div>
+</div>
+<!-- #DEBUG# -->
+</body>
+</html>

@@ -4,6 +4,58 @@
 		"selected_items":
 		[
 			[
+				"load",
+				"loadLeagueTeams"
+			],
+			[
+				"find",
+				"find"
+			],
+			[
+				"getT",
+				"getTeamid"
+			],
+			[
+				"getTeam",
+				"getTeamName"
+			],
+			[
+				"team",
+				"teamid"
+			],
+			[
+				"trans",
+				"tranfserDate"
+			],
+			[
+				"Team",
+				"TeamTransfersScraper"
+			],
+			[
+				"tra",
+				"transfer"
+			],
+			[
+				"S",
+				"STATUS_TRANSFERED"
+			],
+			[
+				"STATUS_",
+				"STATUS_ACTIVE"
+			],
+			[
+				"scrap",
+				"scrapedPlayers"
+			],
+			[
+				"scr",
+				"scrapedPlayer"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
 				"getGo",
 				"getGoalsaway"
 			],
@@ -72,10 +124,6 @@
 				"playerInDb"
 			],
 			[
-				"scr",
-				"scraper"
-			],
-			[
 				"sc",
 				"scrapedTeam"
 			],
@@ -104,10 +152,6 @@
 				"TeamPlayersScraper"
 			],
 			[
-				"team",
-				"team"
-			],
-			[
 				"te",
 				"teamdetail"
 			],
@@ -122,10 +166,6 @@
 			[
 				"teamde",
 				"teamdetail"
-			],
-			[
-				"load",
-				"loadHTML"
 			],
 			[
 				"scraped",
@@ -168,58 +208,74 @@
 	"buffers":
 	[
 		{
-			"file": "module/Application/src/Application/Controller/StatsController.php",
+			"file": "module/RS/src/RS/Loader/RSLoader.php",
 			"settings":
 			{
-				"buffer_size": 10694,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "module/Application/view/application/stats/streaks.tpl",
-			"settings":
-			{
-				"buffer_size": 3108,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "module/Application/config/module.config.php",
-			"settings":
-			{
-				"buffer_size": 6510,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "module/Application/view/application/stats/h2h.tpl",
-			"settings":
-			{
-				"buffer_size": 1788,
+				"buffer_size": 10193,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "module/Application/view/application/index/index.tpl",
+			"file": "module/RS/src/RS/HTML/rs.php",
 			"settings":
 			{
-				"buffer_size": 45,
+				"buffer_size": 6217,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "module/RS/src/RS/Entity/Matches.php",
+			"settings":
+			{
+				"buffer_size": 7420,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "module/Application/src/Application/Controller/IndexController.php",
+			"file": "module/RS/src/RS/Scraper/TeamDetailsScraper.php",
 			"settings":
 			{
-				"buffer_size": 1141,
+				"buffer_size": 1637,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "module/RS/src/RS/Entity/Division.php",
+			"settings":
+			{
+				"buffer_size": 3637,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "module/RS/src/RS/Entity/Team.php",
+			"settings":
+			{
+				"buffer_size": 5979,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "module/Application/src/Application/Controller/BatchController.php",
+			"settings":
+			{
+				"buffer_size": 2319,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"contents": "$avghomeOnlyresult = getResultByGoals($avghomeOnlyhome,$avghomeOnlyaway);\necho \"<tr><td colspan='3' style='text-align:right;'>Avg Home:</td><td class='$avghomeOnlyresult'>$avghomeOnlyhome - $avghomeOnlyaway</td></tr>\";\nforeach($resultsAway as $rAway) {\n    $ragoalsHome += $rAway[0];\n    $ragoalsAway += $rAway[1];\n}\n$avgawayOnlyhome = round($ragoalsHome / count($resultsAway),1);\n$avgawayOnlyaway = round($ragoalsAway / count($resultsAway),1);\n$avgawayOnlyresult = getResultByGoals($avgawayOnlyaway,$avgawayOnlyhome);\necho \"<tr><td colspan='3' style='text-align:right;'>Avg Away:</td><td class='$avgawayOnlyresult'>$avgawayOnlyhome - $avgawayOnlyaway</td></tr>\";",
+			"file": "public/index.php",
 			"settings":
 			{
-				"buffer_size": 663,
+				"buffer_size": 743,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "data/logs/rsStats.log",
+			"settings":
+			{
+				"buffer_size": 56,
 				"line_ending": "Windows"
 			}
 		}
@@ -304,39 +360,52 @@
 	},
 	"file_history":
 	[
-		"/E/Dev/RS_Stats/module/RS/src/RS/HTML/rs_streak.php",
-		"/E/Dev/RS_Stats/module/Application/src/Application/Controller/IndexController.php",
+		"/E/Dev/RS_Stats/module/RS/src/RS/Scraper/LeagueScraper.php",
+		"/D/YandexDisk/Programs/Sublime Text Build 3059 x32/Data/Packages/User/php-getters-setters.sublime-settings",
+		"/D/YandexDisk/Programs/Sublime Text Build 3059 x32/Data/Packages/PHP Getters and Setters/php-getters-setters.sublime-settings",
+		"/E/Dev/RS_Stats/module/RS/src/RS/HTML/rs.php",
 		"/E/Dev/RS_Stats/module/Application/config/module.config.php",
+		"/E/Dev/RS_Stats/module/RS/src/RS/Entity/Team.php",
+		"/E/Dev/RS_Stats/module/RS/src/RS/Scraper/Scraper.php",
+		"/E/Dev/RS_Stats/module/RS/src/RS/Scraper/PlayerScraper.php",
+		"/E/Dev/RS_Stats/public/index.php",
+		"/E/Private/MOBIB-Extractor-windows-v1.0.6/MOBIB-Extractor.py",
+		"/E/Dev/RS_Stats/module/RS/src/RS/Scraper/TeamTransfersScraper.php",
+		"/E/Dev/RS_Stats/public/testdata/team-transfers.html",
+		"/E/Dev/RS_Stats/module/RS/src/RS/Entity/Division.php",
+		"/E/Dev/RS_Stats/module/Application/view/application/batch/index.tpl",
+		"/E/Dev/RS_Stats/vendor/smarty/smarty/distribution/libs/plugins/function.print_array.php",
+		"/E/Dev/RS_Stats/config/autoload/global.php",
+		"/E/Dev/RS_Stats/module/Application/Module.php",
+		"/E/Dev/RS_Stats/module/RS/src/RS/Entity/Player.php",
+		"/E/Dev/RS_Stats/public/testdata/csv.sql",
+		"/E/Dev/RS_Stats/module/Application/src/Application/Controller/BatchController.php",
+		"/E/Dev/RS_Stats/module/RS/src/RS/Scraper/TeamPlayersScraper.php",
+		"/E/Dev/RS_Stats/public/testdata/team-PlayerInjured-info.html",
+		"/E/Dev/RS_Stats/module/Application/src/Application/Controller/IndexController.php",
+		"/E/Dev/RS_Stats/module/Application/src/Application/Controller/StatsController.php",
+		"/E/Dev/RS_Stats/module/Application/view/application/stats/streaks.tpl",
+		"/E/Dev/RS_Stats/module/Application/view/application/stats/h2h.tpl",
+		"/E/Dev/RS_Stats/module/Application/view/application/index/index.tpl",
+		"/E/Dev/RS_Stats/module/RS/src/RS/HTML/rs_streak.php",
 		"/E/Dev/RS_Stats/module/Application/view/layout/layout.tpl",
 		"/E/Dev/RS_Stats/module/Application/view/application/stats/index.tpl",
 		"/E/Dev/RS_Stats/module/Application/view/application/navigation/topnav.phtml",
-		"/E/Dev/RS_Stats/module/RS/src/RS/Entity/Division.php",
 		"/E/Dev/RS_Stats/module/RS/src/RS/Entity/PlayerStats.php",
-		"/E/Dev/RS_Stats/module/RS/src/RS/Entity/Player.php",
-		"/E/Dev/RS_Stats/public/testdata/csv.sql",
 		"/E/Dev/RS_Stats/module/RS/src/RS/Loader/RSLoader.php",
-		"/E/Dev/RS_Stats/module/RS/src/RS/Entity/Team.php",
-		"/E/Dev/RS_Stats/module/RS/src/RS/Scraper/PlayerScraper.php",
 		"/E/Dev/RS_Stats/module/RS/src/RS/Scraper/TeamDetailsScraper.php",
 		"/E/Dev/RS_Stats/module/RS/src/RS/Scraper/TeamFacilitiesScraper.php",
-		"/E/Dev/RS_Stats/module/RS/src/RS/Scraper/TeamPlayersScraper.php",
 		"/E/Dev/RS_Stats/public/testdata/league.txt",
-		"/E/Dev/RS_Stats/module/RS/src/RS/Scraper/LeagueScraper.php",
 		"/E/Dev/RS_Stats/module/RS/src/RS/Entity/TeamDetail.php",
-		"/E/Dev/RS_Stats/module/Application/view/application/batch/index.tpl",
 		"/E/Dev/RS_Stats/public/testdata/player-keeper.txt",
 		"/E/Dev/RS_Stats/public/testdata/team-players.txt",
-		"/E/Dev/RS_Stats/module/RS/src/RS/Scraper/Scraper.php",
 		"/E/Dev/RS_Stats/module/Application/view/error/index.tpl",
 		"/E/Dev/RS_Stats/module/Application/view/error/404.tpl",
 		"/E/Dev/RS_Stats/public/testdata/team-info.html",
 		"/E/Dev/RS_Stats/public/testdata/team-facilities.txt",
 		"/E/Dev/RS_Stats/composer.json",
-		"/E/Dev/RS_Stats/module/Application/Module.php",
 		"/E/Dev/RS_Stats/config/application.config.php",
 		"/E/Dev/RS_Stats/module/RS/src/RS/Entity/Results.php",
-		"/E/Dev/RS_Stats/module/Application/src/Application/Controller/BatchController.php",
-		"/E/Dev/RS_Stats/module/Application/view/application/index/index.tpl",
 		"/E/Dev/RS_Stats/public/testdata/player-def.txt",
 		"/E/Dev/RS_Stats/public/testdata/player-att.txt",
 		"/E/Dev/RS_Stats/public/testdata/player-def2.txt",
@@ -417,6 +486,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"group",
+			");\n",
+			"logger",
+			"tranfserDate",
+			"march",
 			"home",
 			"content",
 			"player",
@@ -449,6 +523,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"transferDate",
 			"precision=4",
 			"",
 			"\""
@@ -462,24 +537,24 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "module/Application/src/Application/Controller/StatsController.php",
+					"file": "module/RS/src/RS/Loader/RSLoader.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10694,
+						"buffer_size": 10193,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3943,
-								3948
+								10054,
+								10054
 							]
 						],
 						"settings":
@@ -487,145 +562,58 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1546.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "module/Application/view/application/stats/streaks.tpl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3108,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3034,
-								3034
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "module/Application/config/module.config.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6510,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1902,
-								1902
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 450.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "module/Application/view/application/stats/h2h.tpl",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1788,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1082,
-								1082
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 180.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "module/Application/view/application/index/index.tpl",
+					"buffer": 1,
+					"file": "module/RS/src/RS/HTML/rs.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 45,
+						"buffer_size": 6217,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								44,
-								44
+								4589,
+								4589
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1280.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "module/Application/src/Application/Controller/IndexController.php",
+					"buffer": 2,
+					"file": "module/RS/src/RS/Entity/Matches.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1141,
+						"buffer_size": 7420,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								843,
-								843
+								242,
+								242
 							]
 						],
 						"settings":
@@ -635,37 +623,190 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 165.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 3,
+					"file": "module/RS/src/RS/Scraper/TeamDetailsScraper.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 663,
+						"buffer_size": 1637,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								663,
-								663
+								1039,
+								1039
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 135.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "module/RS/src/RS/Entity/Division.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3637,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1812,
+								1822
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 63.0,
+						"translation.y": 1277.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "module/RS/src/RS/Entity/Team.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5979,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4504,
+								4504
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 615.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "module/Application/src/Application/Controller/BatchController.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2319,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1191,
+								1191
+							],
+							[
+								1328,
+								1328
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 390.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "public/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 743,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								198,
+								198
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "data/logs/rsStats.log",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 56,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
 					"type": "text"
 				}
 			]

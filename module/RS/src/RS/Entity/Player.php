@@ -12,6 +12,9 @@ use Doctrine\Common\Collections\ArrayCollection;
  */
 class Player
 {
+    const STATUS_ACTIVE = 1;
+    const STATUS_LOANED = 2;
+    const STATUS_TRANSFERED = 3;
 
     /**
      * @var integer
@@ -63,6 +66,13 @@ class Player
      * })
      */
     private $team;
+
+    /**
+     * @var integer
+     * 1 = Active, 2 = loaned, 3 = transfered
+     * @ORM\Column(name="status", type="integer", options={"default" = 1})
+     */
+    private $status = 1;
 
 
     public function __construct()
@@ -235,6 +245,32 @@ class Player
     {
         $this->name = $name;
 
+        return $this;
+    }
+
+    /**
+     * Gets the 1 = Active, 2 = loaned, 3 = transfered.
+     *
+     * @return integer
+     */
+    public function getStatus()
+    {
+        return $this->status;
+    }
+    
+    /**
+     * Sets the 1 = Active, 2 = loaned, 3 = transfered.
+     *
+     * @param integer $status the status
+     *
+     * @return self
+     */
+    public function setStatus($status)
+    {
+        if (!in_array($status, array(self::STATUS_ACTIVE, self::STATUS_LOANED, self::STATUS_TRANSFERED))) {
+            throw new \InvalidArgumentException("Invalid status");
+        }
+        $this->status = $status;
         return $this;
     }
 }

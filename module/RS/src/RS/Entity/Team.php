@@ -145,7 +145,7 @@ class Team
 
     public function addDetail(TeamDetail $detail)
     {
-        $this->details[] = $detail;
+        $this->details->add($detail);
 
         return $this;
     }
@@ -218,6 +218,31 @@ class Team
     public function setManager($manager)
     {
         $this->manager = $manager;
+
+        return $this;
+    }
+
+
+    /**
+     * Gets the value of divisions.
+     *
+     * @return mixed
+     */
+    public function getDivisions()
+    {
+        return $this->divisions;
+    }
+    
+    /**
+     * Sets the value of divisions.
+     *
+     * @param mixed $divisions the divisions
+     *
+     * @return self
+     */
+    public function setDivisions($divisions)
+    {
+        $this->divisions = $divisions;
 
         return $this;
     }

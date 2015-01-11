@@ -12,5 +12,14 @@
  */
 
 return array(
-    // ...
+    'service_manager' => array(
+        'factories' => array(
+            'logger' => function ($sm) {
+                $log = new Zend\Log\Logger();
+                $writer = new Zend\Log\Writer\Stream('./data/logs/rsStats.log');
+                $log->addWriter($writer);
+                return $log;
+            },
+        ),
+    ),
 );

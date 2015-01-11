@@ -6,6 +6,7 @@ abstract class Scraper
 {
     protected $html;
     protected $scrapedInfo;
+    private static $USE_PROXY = FALSE;
 
     public function __construct() 
     {
@@ -14,7 +15,27 @@ abstract class Scraper
 
     protected function loadHTML()
     {
-        $this->html = \file_get_html($this->getURL());
+        $context = NULL;
+        if(self::$USE_PROXY)
+        {
+            $auth = base64_encode('mathias.vandebroeck:tiogapass');
+            $contextOptions = array
+            ( 
+                   /*'http' => array
+                   ( 
+                          'proxy' => 'tcp://proxies.finbel.intra:8080', // This needs to be the server and the port of the NTLM Authentication Proxy Server. 
+                          'request_fulluri' => true,
+                          'header' => array("Proxy-Authorization: Basic $auth")
+                   ), */
+                    'http' => array
+                    ( 
+                          'proxy' => 'tcp://10.12.3.196:8118', // This needs to be the server and the port of the NTLM Authentication Proxy Server. 
+                          'request_fulluri' => true,
+                    ), 
+            );
+            $context = stream_context_create($contextOptions);  
+        }
+        $this->html = \file_get_html($this->getURL(), FALSE, $context);
     }
 
     /**
